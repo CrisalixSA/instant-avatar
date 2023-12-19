@@ -50,8 +50,8 @@ The proposed method is compared against parametric model-based methods like [DEC
 </figure>
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
-  <img align="center" src="assets/images/3 views - 5d0e87f3adb80226.gif" width="300" />
-  <figcaption align="center">Figure 8. <b>3D reconstruction optimization process</b> on commodity hardware (input: <b>3 views</b>).</figcaption>
+  <img src="assets/images/3 views - 5d0e87f3adb80226.gif" width="300" />
+  <figcaption>Figure 8. <b>3D reconstruction optimization process</b> on commodity hardware (input: <b>3 views</b>).</figcaption>
 </figure>
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
