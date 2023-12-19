@@ -2,6 +2,11 @@
 layout: default
 ---
 
+<figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
+  <img src="assets/images/teaser.png" width="450" />
+  <figcaption>Figure 1. <b>Reconstruction time comparison.</b> InstantAvatar is a method that obtains full head 3D avatars from one or few images in a matter of seconds. This figure reports the time vs reconstruction error for ours and state-of-the-art methods, when considering only the face region where all methods are applicable (full head error metrics are reported in the experimental section). InstantAvatar speed is only surpassed by 3DMM methods, which, however are significantly less accurate. Compared against other neural field approaches, InstantAvatar obtains a 100x speed up at similar reconstruction error values.</figcaption>
+</figure>
+
 ## Abstract
 
 Recent advances in full-head reconstruction have been obtained by optimizing a neural field through differentiable surface or volume rendering to represent a single scene. While these techniques achieve an unprecedented accuracy, they take several minutes, or even hours, due to the expensive optimization process required. In this work, we introduce InstantAvatar, a method that recovers full-head avatars from few images (down to just one) in a few seconds on commodity hardware. In order to speed up the reconstruction process, we propose a system that combines, for the first time, a voxel-grid neural field representation with a surface renderer. Notably, a naive combination of these two techniques leads to unstable optimizations that do not converge to valid solutions. In order to overcome this limitation, we present a novel statistical model that learns a prior distribution over 3D head signed distance functions using a voxel-grid based architecture. The use of this prior model, in combination with other design choices, results into a system that achieves 3D head reconstructions with comparable accuracy as the state-of-the-art with a 100x speed-up.
@@ -52,21 +57,6 @@ The proposed method is compared against parametric model-based methods like [DEC
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
   <img src="assets/images/6 views - 797a46725454b9c0.gif" width="300" />
   <figcaption>Figure 9. <b>3D reconstruction optimization process</b> on commodity hardware (input: <b>6 views</b>).</figcaption>
-</figure>
-
-<figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
-  <img src="assets/images/teaser.png" width="450" />
-  <figcaption>Figure 1. <b>Reconstruction time comparison.</b></figcaption>
-</figure>
-
-<figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
-  <img src="assets/images/6 views - 797a46725454b9c0.gif" width="300" />
-  <figcaption>Figure 1. <b>Reconstruction time comparison.</b></figcaption>
-</figure>
-
-<figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
-  <img src="assets/images/teaser.png" width="450" />
-  <figcaption>Figure 1. <b>Reconstruction time comparison.</b></figcaption>
 </figure>
 
 ## BibTeX
