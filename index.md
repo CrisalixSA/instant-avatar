@@ -13,21 +13,6 @@ Recent advances in full-head reconstruction have been obtained by optimizing a n
   <figcaption>Figure 2. <b>Key insights regarding speed and stability.</b></figcaption>
 </figure>
 
-<figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
-  <img src="assets/images/teaser.png" width="450" />
-  <figcaption>Figure 1. <b>Reconstruction time comparison.</b></figcaption>
-</figure>
-
-<figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
-  <img src="assets/images/6 views - 797a46725454b9c0.gif" width="300" />
-  <figcaption>Figure 1. <b>Reconstruction time comparison.</b></figcaption>
-</figure>
-
-<figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
-  <img src="assets/images/teaser.png" width="450" />
-  <figcaption>Figure 1. <b>Reconstruction time comparison.</b></figcaption>
-</figure>
-
 Combined with some techniques originated from a few key insights, our rapid 3D reconstruction pipeline builds on top of [IDR](https://arxiv.org/abs/2003.09852) and [H3D-Net](https://arxiv.org/abs/2107.12512). We find that surface rendering is more computationally efficient than volumetric rendering since its sampling size is considerably smaller. Therefore, we show that using grid-based representations together with this efficient rendering increase the speed of convergence significantly. However, both of these concepts make the optimization process more challenging in terms of stability. In order to diminish these side effects: we employ a statistical shape prior for guiding the optimization first steps through a valid latent space; using progressive key schedules to make proper usage of each level-of-detail (similar to concurrent work [Neuralangelo](https://arxiv.org/abs/2306.03092/)); and supervising with normal cues for increasing its robustness.
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
@@ -67,6 +52,21 @@ The proposed method is compared against parametric model-based methods like [DEC
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
   <img src="assets/images/6 views - 797a46725454b9c0.gif" width="300" />
   <figcaption>Figure 9. <b>3D reconstruction optimization process</b> on commodity hardware (input: <b>6 views</b>).</figcaption>
+</figure>
+
+<figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
+  <img src="assets/images/teaser.png" width="450" />
+  <figcaption>Figure 1. <b>Reconstruction time comparison.</b></figcaption>
+</figure>
+
+<figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
+  <img src="assets/images/6 views - 797a46725454b9c0.gif" width="300" />
+  <figcaption>Figure 1. <b>Reconstruction time comparison.</b></figcaption>
+</figure>
+
+<figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
+  <img src="assets/images/teaser.png" width="450" />
+  <figcaption>Figure 1. <b>Reconstruction time comparison.</b></figcaption>
 </figure>
 
 ## BibTeX
