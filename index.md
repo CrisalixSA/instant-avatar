@@ -27,7 +27,7 @@ Combined with some techniques originated from a few key insights, our rapid 3D r
 
 ## Results
 
-The proposed method is compared against parametric model-based methods like [DECA](https://arxiv.org/abs/2012.04012), and per-scene-optimization approaches like [H3D-Net](https://openaccess.thecvf.com/content/ICCV2021/html/Ramon_H3D-Net_Few-Shot_High-Fidelity_3D_Head_Reconstruction_ICCV_2021_paper.html) and [SIRA](https://arxiv.org/abs/2209.03027) in full-head reconstruction, using the [H3DS](https://openaccess.thecvf.com/content/ICCV2021/html/Ramon_H3D-Net_Few-Shot_High-Fidelity_3D_Head_Reconstruction_ICCV_2021_paper.html) dataset.
+The proposed method is compared against parametric model-based methods like [DECA](https://arxiv.org/abs/2012.04012) in single-view face reconstruction, and per-scene-optimization approaches like [H3D-Net](https://openaccess.thecvf.com/content/ICCV2021/html/Ramon_H3D-Net_Few-Shot_High-Fidelity_3D_Head_Reconstruction_ICCV_2021_paper.html) and [SIRA](https://arxiv.org/abs/2209.03027) in single-view and multi-view full-head reconstruction, using the [H3DS](https://openaccess.thecvf.com/content/ICCV2021/html/Ramon_H3D-Net_Few-Shot_High-Fidelity_3D_Head_Reconstruction_ICCV_2021_paper.html) dataset.
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
   <img src="assets/images/qualitative_experiments_front.png" width="700" />
