@@ -54,11 +54,11 @@ We also provide results on diverse datasets factorizing the diffuse albedo, diff
 
 ## BibTeX
 
-```
-@article{caselles2022sira,
-  title={SIRA: Relightable Avatars from a Single Image},
-  author={Caselles, Pol and Ramon, Eduard and Garcia, Jaime and Giro-i-Nieto, Xavier and Moreno-Noguer, Francesc and Triginer, Gil},
-  journal={arXiv preprint arXiv:2209.03027},
-  year={2022}
+```latex
+@article{canela2024instantavatar,
+  title={InstantAvatar: Efficient 3D Head Reconstruction via Surface Rendering},
+  author={Canela, Antonio and Caselles, Pol and Malik, Ibrar and Ramon, Eduard and Garcia, Jaime and Sanchez-Riera, Jordi and Triginer, Gil and Moreno-Noguer, Francesc},
+  booktitle = {International Conference on 3D Vision (3DV)},
+  year={2024}
 }
 ```
