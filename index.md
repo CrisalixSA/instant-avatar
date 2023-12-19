@@ -2,7 +2,10 @@
 layout: default
 ---
 
-![](assets/images/teaser.png)
+<!-- ![](assets/images/teaser.png) -->
+<p align="center">
+  <img src="assets/images/teaser.png" width="350" />
+</p>
 
 ## Abstract
 
@@ -12,7 +15,10 @@ Recent advances in full-head reconstruction have been obtained by optimizing a n
 
 Combined with some techniques derived from a few key insights, our instant 3D reconstruction pipeline builds on top of [IDR](https://arxiv.org/abs/2003.09852) and [H3D-Net](https://arxiv.org/abs/2107.12512). We find that surface rendering is more computationally efficient than volumetric rendering since its sampling size is considerably smaller. Therefore, we show that using grid-based representations together with this efficient rendering increase the speed of convergence significantly. However, both of these concepts make the optimization process more challenging in terms of stability. In order to diminish these side effects: we employ a statistical shape prior for guiding the optimization first steps through a valid latent space; using progressive key schedules to make proper usage of each level-of-detail (similar to concurrent work [Neuralangelo](https://arxiv.org/abs/2306.03092/)); and supervising with normal cues for increasing its robustness.
 
-![](assets/images/method.png)
+<!-- ![](assets/images/method.png) -->
+<p align="center">
+  <img src="assets/images/method.png" width="700" />
+</p>
 
 ## Results
 
@@ -26,10 +32,19 @@ SIRA recovers the geometry of the head, including hair and shoulders, yielding 3
   <img src="assets/images/comp_3d.png" width="700" />
 </p>
 
-<p align="center">
-  <img src="assets/images/1 view - 34f084f75deb512f.gif" width="350" />
-  <img src="assets/images/3 views - 5d0e87f3adb80226.gif" width="350" />
-  <img src="assets/images/6 views - 797a46725454b9c0.gif" width="350" />
+<figure align="center">
+  <img src="assets/images/1 view - 34f084f75deb512f.gif" width="700" />
+  <figcaption>Figure 1. Test.</figcaption>
+</p>
+
+<figure align="center">
+  <img src="assets/images/3 views - 5d0e87f3adb80226.gif" width="700" />
+  <figcaption>Figure 2. Test.</figcaption>
+</p>
+
+<figure align="center">
+  <img src="assets/images/6 views - 797a46725454b9c0.gif" width="700" />
+  <figcaption>Figure 3. Test.</figcaption>
 </p>
 
 ## BibTeX
