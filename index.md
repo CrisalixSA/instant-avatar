@@ -22,14 +22,12 @@ Combined with some techniques originated from a few key insights, our rapid 3D r
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
   <img src="assets/images/method.png" width="700" />
-  <figcaption>Figure 3. <b>Main method pipeline.</b></figcaption>
+  <figcaption>Figure 3. <b>Overview of our method.</b> For each query point x we obtain the feature z(x) from the multi-resolution feature grid at different levels of detail. Afterwards, we concatenate the positional encoding applied to x, the global feature gi, and the grid feature z(x) to query the SDF parameterized by a shallow MLP. We supervise the gradient of the SDF with the predicted normal at the pixel location where the ray intersects. Finally, we use a rendering network to predict the radiance emitted from the surface point xdiff , with normal n, in a viewing direction v.</figcaption>
 </figure>
 
 ## Results
 
-We next evaluate our 3D reconstruction on multiple real-world portrait photos from the datasets  [H3DS](https://openaccess.thecvf.com/content/ICCV2021/html/Ramon_H3D-Net_Few-Shot_High-Fidelity_3D_Head_Reconstruction_ICCV_2021_paper.html) and [CelebA-HQ](https://arxiv.org/abs/1710.10196).
-
-The proposed method outperforms parametric model-based methods like [Feng et al.](https://dl.acm.org/doi/abs/10.1145/3450626.3459936) and [Dib et al.](https://openaccess.thecvf.com/content/ICCV2021/html/Dib_Towards_High_Fidelity_Monocular_Face_Reconstruction_With_Rich_Reflectance_Using_ICCV_2021_paper.html) in 3D face reconstruction from only 1 view, and per scene optimitzation approaches like [H3D-Net](https://openaccess.thecvf.com/content/ICCV2021/html/Ramon_H3D-Net_Few-Shot_High-Fidelity_3D_Head_Reconstruction_ICCV_2021_paper.html) and [SIRA](https://arxiv.org/abs/2209.03027) in full-head reconstruction.
+The proposed method is compared against parametric model-based methods like [DECA](https://arxiv.org/abs/2012.04012), and per-scene-optimization approaches like [H3D-Net](https://openaccess.thecvf.com/content/ICCV2021/html/Ramon_H3D-Net_Few-Shot_High-Fidelity_3D_Head_Reconstruction_ICCV_2021_paper.html) and [SIRA](https://arxiv.org/abs/2209.03027) in full-head reconstruction, using the [H3DS](https://openaccess.thecvf.com/content/ICCV2021/html/Ramon_H3D-Net_Few-Shot_High-Fidelity_3D_Head_Reconstruction_ICCV_2021_paper.html) dataset.
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
   <img src="assets/images/qualitative_experiments_front.png" width="700" />
