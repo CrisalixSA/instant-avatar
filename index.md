@@ -4,6 +4,15 @@ layout: default
 
 ## Abstract
 
+Recent advances in full-head reconstruction have been obtained by optimizing a neural field through differentiable surface or volume rendering to represent a single scene. While these techniques achieve an unprecedented accuracy, they take several minutes, or even hours, due to the expensive optimization process required. In this work, we introduce InstantAvatar, a method that recovers full-head avatars from few images (down to just one) in a few seconds on commodity hardware. In order to speed up the reconstruction process, we propose a system that combines, for the first time, a voxel-grid neural field representation with a surface renderer. Notably, a naive combination of these two techniques leads to unstable optimizations that do not converge to valid solutions. In order to overcome this limitation, we present a novel statistical model that learns a prior distribution over 3D head signed distance functions using a voxel-grid based architecture. The use of this prior model, in combination with other design choices, results into a system that achieves 3D head reconstructions with comparable accuracy as the state-of-the-art with a 100x speed-up.
+
+## Method
+
+<figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
+  <img src="assets/images/key_insights.png" width="700" />
+  <figcaption>Figure 2. <b>Key insights regarding speed and stability.</b></figcaption>
+</figure>
+
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
   <img src="assets/images/teaser.png" width="450" />
   <figcaption>Figure 1. <b>Reconstruction time comparison.</b></figcaption>
@@ -17,15 +26,6 @@ layout: default
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
   <img src="assets/images/teaser.png" width="450" />
   <figcaption>Figure 1. <b>Reconstruction time comparison.</b></figcaption>
-</figure>
-
-Recent advances in full-head reconstruction have been obtained by optimizing a neural field through differentiable surface or volume rendering to represent a single scene. While these techniques achieve an unprecedented accuracy, they take several minutes, or even hours, due to the expensive optimization process required. In this work, we introduce InstantAvatar, a method that recovers full-head avatars from few images (down to just one) in a few seconds on commodity hardware. In order to speed up the reconstruction process, we propose a system that combines, for the first time, a voxel-grid neural field representation with a surface renderer. Notably, a naive combination of these two techniques leads to unstable optimizations that do not converge to valid solutions. In order to overcome this limitation, we present a novel statistical model that learns a prior distribution over 3D head signed distance functions using a voxel-grid based architecture. The use of this prior model, in combination with other design choices, results into a system that achieves 3D head reconstructions with comparable accuracy as the state-of-the-art with a 100x speed-up.
-
-## Method
-
-<figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
-  <img src="assets/images/key_insights.png" width="700" />
-  <figcaption>Figure 2. <b>Key insights regarding speed and stability.</b></figcaption>
 </figure>
 
 Combined with some techniques originated from a few key insights, our rapid 3D reconstruction pipeline builds on top of [IDR](https://arxiv.org/abs/2003.09852) and [H3D-Net](https://arxiv.org/abs/2107.12512). We find that surface rendering is more computationally efficient than volumetric rendering since its sampling size is considerably smaller. Therefore, we show that using grid-based representations together with this efficient rendering increase the speed of convergence significantly. However, both of these concepts make the optimization process more challenging in terms of stability. In order to diminish these side effects: we employ a statistical shape prior for guiding the optimization first steps through a valid latent space; using progressive key schedules to make proper usage of each level-of-detail (similar to concurrent work [Neuralangelo](https://arxiv.org/abs/2306.03092/)); and supervising with normal cues for increasing its robustness.
