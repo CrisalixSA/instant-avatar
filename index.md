@@ -4,7 +4,7 @@ layout: default
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
   <img src="assets/images/teaser.png" width="450" />
-  <figcaption>Figure 1. <b>Reconstruction time comparison.</b> InstantAvatar is a method that obtains full head 3D avatars from one or few images in a matter of seconds. This figure reports the time vs reconstruction error for ours and state-of-the-art methods, when considering only the face region where all methods are applicable (full head error metrics are reported in the experimental section). InstantAvatar speed is only surpassed by 3DMM methods, which, however are significantly less accurate. Compared against other neural field approaches, InstantAvatar obtains a 100x speed up at similar reconstruction error values.</figcaption>
+  <figcaption>Figure 1. <b>Reconstruction time comparison.</b> InstantAvatar is a method that obtains full head 3D avatars from one or few images in a matter of seconds. This figure reports the time vs reconstruction error for ours and state-of-the-art methods, when considering only the face region where all methods are applicable (full head error metrics are reported at the experiments section). InstantAvatar speed is only surpassed by 3DMM methods, which, however are significantly less accurate. Compared against other neural field approaches, InstantAvatar obtains a 100x speed up at similar reconstruction error values.</figcaption>
 </figure>
 
 ## Abstract
