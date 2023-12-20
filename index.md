@@ -22,7 +22,7 @@ Combined with some techniques originated from a few key insights, our 3D reconst
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
   <img src="assets/images/method.png" width="700" />
-  <figcaption>Figure 3. <b>Overview of our method.</b> For each query point x we obtain the feature z(x) from the multi-resolution feature grid at different levels of detail. Afterwards, we concatenate the positional encoding applied to x, the global feature gi, and the grid feature z(x) to query the SDF parameterized by a shallow MLP. We supervise the gradient of the SDF with the predicted normal at the pixel location where the ray intersects. Finally, we use a rendering network to predict the radiance emitted from the surface point xdiff , with normal n, in a viewing direction v.</figcaption>
+  <figcaption>Figure 3. <b>Overview of our method.</b> For each query point <b>x</b> we obtain the feature <b>z(x)</b> from the multi-resolution feature grid at different levels of detail. Afterwards, we concatenate the positional encoding applied to <b>x</b>, the global feature <b>g<sub>i</sub></b>, and the grid feature <b>z(x)</b> to query the SDF parameterized by a shallow MLP. We supervise the gradient of the SDF with the predicted normal at the pixel location where the ray intersects. Finally, we use a rendering network to predict the radiance emitted from the surface point <b>x<sub>diff</sub></b> , with normal <b>n</b>, in a viewing direction <b>v</b>.</figcaption>
 </figure>
 
 ## Results
@@ -45,16 +45,19 @@ The proposed method is compared against parametric model-based methods like [DEC
 </figure>
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
+  <img src="assets/images/1 view - 34f084f75deb512f.jpg" width="300" />
   <img src="assets/images/1 view - 34f084f75deb512f.gif" width="300" />
   <figcaption>Figure 7. <b>3D reconstruction optimization process</b> on commodity hardware (input: <b>1 view</b>).</figcaption>
 </figure>
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
+  <img src="assets/images/3 views - 5d0e87f3adb80226.jpg" width="300" />
   <img src="assets/images/3 views - 5d0e87f3adb80226.gif" width="300" />
   <figcaption>Figure 8. <b>3D reconstruction optimization process</b> on commodity hardware (input: <b>3 views</b>).</figcaption>
 </figure>
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
+  <img src="assets/images/6 views - 797a46725454b9c0.jpg" width="300" />
   <img src="assets/images/6 views - 797a46725454b9c0.gif" width="300" />
   <figcaption>Figure 9. <b>3D reconstruction optimization process</b> on commodity hardware (input: <b>6 views</b>).</figcaption>
 </figure>
