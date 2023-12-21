@@ -46,18 +46,21 @@ The proposed method is compared against parametric model-based methods like [DEC
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
   <img src="assets/images/1 view - 34f084f75deb512f.jpg" width="300" />
+  <br>
   <img src="assets/images/1 view - 34f084f75deb512f.gif" width="300" />
   <figcaption>Figure 7. <b>3D reconstruction optimization process</b> on commodity hardware (input: <b>1 view</b>).</figcaption>
 </figure>
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
   <img src="assets/images/3 views - 5d0e87f3adb80226.jpg" width="300" />
+  <br>
   <img src="assets/images/3 views - 5d0e87f3adb80226.gif" width="300" />
   <figcaption>Figure 8. <b>3D reconstruction optimization process</b> on commodity hardware (input: <b>3 views</b>).</figcaption>
 </figure>
 
 <figure align="center"  style="margin-top: 2em; margin-bottom: 2em">
   <img src="assets/images/6 views - 797a46725454b9c0.jpg" width="300" />
+  <br>
   <img src="assets/images/6 views - 797a46725454b9c0.gif" width="300" />
   <figcaption>Figure 9. <b>3D reconstruction optimization process</b> on commodity hardware (input: <b>6 views</b>).</figcaption>
 </figure>
